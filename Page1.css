@@ -1,0 +1,55 @@
+body{
+    height: 100%;
+    width: 100%;  
+}
+#Cuerpo{
+    background-color: rgb(139, 19, 65);
+}
+
+.nav-item{
+    font-size:larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.col-10{
+    margin: auto;
+}
+
+#BGImage{
+    margin:3%;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+
+.card-text{
+    text-align: center;    
+}
+.card:hover {
+    transform: scale(1.1);
+}
+footer{
+    margin:3%;
+}
+
+div[class^="d-block"]{
+    margin-top: 3%;
+}
+
+.card2:hover{
+    transform: scale(1.05);
+}
+.Social{
+    border: 1px solid black;
+    margin:3%;
+}
+.Contacinfo{
+    border: 1px solid black;
+    margin:3%;
+}
+
+#logo{
+    height: 3em;
+}
+#logoMb{
+    height: 4em;
+}
