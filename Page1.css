@@ -21,11 +21,24 @@ body{
     margin-bottom: 50px;
 }
 
+#Historia1{
+    border: solid black 2px;
+    margin:3%;
+    margin-top: 130px;
+}
+#Historia2{
+    border: solid black 2px;
+    margin: 3%;
+}
+
 .card-text{
     text-align: center;    
 }
+.card{
+    width: 85%;
+}
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 footer{
     margin:3%;
@@ -35,6 +48,9 @@ div[class^="d-block"]{
     margin-top: 3%;
 }
 
+.card2{
+    width: auto;
+}
 .card2:hover{
     transform: scale(1.02);
 }
