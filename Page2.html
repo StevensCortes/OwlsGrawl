@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Owl's Crawl </title>
-    <link rel="stylesheet" href="Page1.css">
+    <link rel="stylesheet" href="css/Page1.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <script src="Page1.js"></script>
+    <script src="js/Page1.js"></script>
 
     <!--LINK CSS BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar1" aria-controls="#Navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Navbar1" aria-controls="Navbar1" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -35,65 +35,198 @@
                 <div>
                     <a href="#"><img class="img-fluid mx-auto d-none d-md-block" id="logo" src="https://cdn-icons-png.flaticon.com/128/233/233992.png" alt="logo"></a>
                     <a href="#"><img class="img-fluid mx-auto d-block d-md-none" id="logoMb" src="https://cdn-icons-png.flaticon.com/128/233/233992.png" alt="logo"></a>
-                    <h1 class="navbar-brand mx-auto d-none d-md-block" href="#">Owl's Crawl</h1>
+                    <h1 class="navbar-brand mx-auto d-none d-md-block">Owl's Crawl</h1>
                 </div>
 
+                
                 <div>
                     <ul class="nav navbar-nav ms-auto d-none d-sm-none d-md-flex"> <!--MS-AUTO SE UTILIZA PARA ALINEAR A LA DERECHA-->
                         <li class="nav-item px-3"><a class="nav-link" href="#"><span class="bi bi-person"></span> Mi cuenta</a></li>
-                        <li class="nav-item px-3"><a class="nav-link" href="#"><span class="bi bi-door-closed"></span> Iniciar Sesion</a></li>
+                        <li class="nav-item px-3"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#my-modal-1"><span class="bi bi-door-closed"></span> Iniciar Sesion</a> </li>
                     </ul>
     
-                    <ul class="nav navbar-nav ms-auto d-flex flex-row-reverse d-sm-flex d-md-none"> <!--MS-AUTO SE UTILIZA PARA ALINEAR A LA DERECHA-->
+                    <ul class="nav navbar-nav ms-auto d-flex flex-row d-sm-flex d-md-none"> <!--MS-AUTO SE UTILIZA PARA ALINEAR A LA DERECHA-->
                         <li class="nav-item px-3"><a class="nav-link" href="#"><span class="bi bi-person"></span></a></li>
-                        <li class="nav-item px-3"><a class="nav-link" href="#"><span class="bi bi-door-closed"></span></a></li>
+                        <li class="nav-item px-3"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#my-modal-1"><span class="bi bi-door-closed"></span></a></li>
                     </ul>
-                </div>
-                
+                </div>            
                 
             </div>
         </nav>
+        <!--MODAL WITH A FORM TO CREATE A RESPONSIVE BUTTON OF LOG IN (INICIAR)-->
+        <div class="modal fade" id="my-modal-1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">Iniciar Sesion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="InputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text text-light">Nunca compartas tu email con nadie mas.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="InputPassword1" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="InputPassword1">
+                      <div id="PasswordHelp" class="form-text text-light" >Debe tener entre 8-9 caracteres </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="Check1">
+                      <label class="form-check-label" for="Check1">Recordarme</label>
+                    </div>
+                    <button type="submit" class="btn btn-secondary" id="BtnIngreso">Ingresar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
     </header>
 
     <section id="Historia1">
-        <div>
-         <h1>GATO SALVAJE</h1>
-        </div>
- 
-        <div>
-         CONTENDIO PAGINA 2
-         </div>
-     </section>
-     
-     <section id="Historia2">  
-         <div>
-             <h1>EL PINGÜINO PERDIDO</h1>
+      
+        <div class="Titulo">
+            <div id="Titulo" class="col-7 col-sm-6 col-md-5 text-bg-secondary bg-transparent rounded-5">
+                <h1>CAPERUCITA ROJA</h1>
             </div>
-     
-            <div>
-             CONTENDIO PAGINA 2
-             </div>
+    
+            <div class="Salvaje card bg-dark">
+                <img src="https://www.diariodesevilla.es/2019/04/11/sociedad/Ilustracion-Caperucita-Roja_1344776088_97799414_667x375.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <a class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#Caperucita1">Iniciar Historia</a>
+                </div>
+              </div>
+        </div>
+        
+        <!--MODAL WITH A FORM TO CREATE A RESPONSIVE BUTTON OF LOG IN (INICIAR)-->
+        <div class="modal fade" id="Caperucita1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel">Caperucita Roja</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   
+                    <div class="col-sm-12">
+                        <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://i0.wp.com/culturacolectiva.com/wp-content/uploads/images/UBMADTOUHJDHXFRXLOLYAXNGSQ.gif?ssl=1"  class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <a href="#"><img src="https://i0.wp.com/culturacolectiva.com/wp-content/uploads/images/YYA5FU653RD63CDY3Q3NG5ZLRY.gif?ssl=1"   class="d-block w-100" alt="..."></a>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://i0.wp.com/culturacolectiva.com/wp-content/uploads/images/G5XUP32PUBBE5KWQ4ZXX6SXHKE.gif?ssl=1"   class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+
+                    <hr>
+
+                    <div id="ContenidoSalvaje">
+                        <p>Érase una vez una niñita que lucía una hermosa capa de color rojo. Como la niña la usaba muy a menudo, todos la llamaban Caperucita Roja.</p>
+
+                        <p>Un día, la mamá de Caperucita Roja la llamó y le dijo: </p>
+                            
+                        <p>—Abuelita no se siente muy bien, he horneado unas galleticas y quiero que tú se las lleves.</p>
+                            
+                        <p>—Claro que sí —respondió Caperucita Roja, poniéndose su capa y llenando su canasta de galleticas recién horneadas.</p>
+                            
+                        <p>Antes de salir, su mamá le dijo:</p>
+                            
+                        <p>— Escúchame muy bien, quédate en el camino y nunca hables con extraños.</p>
+                            
+                        <p>—Yo sé mamá —respondió Caperucita Roja y salió inmediatamente hacia la casa de la abuelita.</p>
+                            
+                        <p>Para llegar a casa de la abuelita, Caperucita debía atravesar un camino a lo largo del espeso bosque. En el camino, se encontró con el lobo.</p>
+                            
+                        <p>—Hola niñita, ¿hacia dónde te diriges en este maravilloso día? —preguntó el lobo.</p>
+                            
+                        <p>Caperucita Roja recordó que su mamá le había advertido no hablar con extraños, pero el lobo lucía muy elegante, además era muy amigable y educado.</p>
+                            
+                        <p>—Voy a la casa de abuelita, señor lobo —respondió la niña—. Ella se encuentra enferma y voy a llevarle estas galleticas para animarla un poco.</p>
+                            
+                        <p>—¡Qué buena niña eres! —exclamó el lobo. —¿Qué tan lejos tienes que ir?</p>
+                            
+                        <p>—¡Oh! Debo llegar hasta el final del camino, ahí vive abuelita—dijo Caperucita con una sonrisa.</p>
+                            
+                        <p>—Te deseo un muy feliz día mi niña —respondió el lobo.</p>
+                            
+                        <p>El lobo se adentró en el bosque. Él tenía un enorme apetito y en realidad no era de confiar. Así que corrió hasta la casa de la abuela antes de que Caperucita pudiera alcanzarlo. Su plan era comerse a la abuela, a Caperucita Roja y a todas las galleticas recién horneadas.</p>
+                            
+                        <p>El lobo tocó la puerta de la abuela. Al verlo, la abuelita corrió despavorida dejando atrás su chal. 
+                            El lobo tomó el chal de la viejecita y luego se puso sus lentes y su gorrito de noche. 
+                            Rápidamente, se trepó en la cama de la abuelita, cubriéndose hasta la nariz con la manta. Pronto escuchó que tocaban la puerta:</p>
+                            
+                        <p>—Abuelita, soy yo, Caperucita Roja.</p>
+                            
+                        <p>Con vos disimulada, tratando de sonar como la abuelita, el lobo dijo:</p>
+                            
+                        <p>—Pasa mi niña, estoy en camita.</p>
+                            
+                        <p>Caperucita Roja pensó que su abuelita se encontraba muy enferma porque se veía muy pálida y sonaba terrible.</p>
+                            
+                        <p>—¡Abuelita, abuelita, qué ojos más grandes tienes!</p>
+                            
+                        <p>—Son para verte mejor —respondió el lobo.</p>
+                            
+                        <p>—¡Abuelita, abuelita, qué orejas más grandes tienes!</p>
+                            
+                        <p>—Son para oírte mejor —susurró el lobo.</p>
+                            
+                        <p>—¡Abuelita, abuelita, que dientes más grandes tienes!</p>
+                            
+                        <p>—¡Son para comerte mejor!</p>
+                            
+                        <p>Con estas palabras, el malvado lobo tiró su manta y saltó de la cama. Asustada, Caperucita salió corriendo hacia la puerta. Justo en ese momento, un leñador se acercó a la puerta, la cual se encontraba entreabierta. La abuelita estaba escondida detrás de él.</p>
+                            
+                        <p>Al ver al leñador, el lobo saltó por la ventana y huyó espantado para nunca ser visto.</p>
+                            
+                        <p>La abuelita y Caperucita Roja agradecieron al leñador por salvarlas del malvado lobo y todos comieron galleticas con leche. Ese día Caperucita Roja aprendió una importante lección:</p>
+                            
+                        <p>“Nunca debes hablar con extraños”.</p>
+                    </div>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+
      </section>
+     
  
 
-    <footer>
+     <footer>
         <div class="container">
             
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <div class="d-block">
                         <div class="card card2 text-white bg-secondary border-dark">
-                            <div class="card-header border-dark">CONTAC US</div>
-                            <div class="card-body">
-                              <h5 class="card-title">Dark card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                              <h5 class="card-title">Dark card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                              <h5 class="card-title">Dark card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
+                            <div class="card-header border-dark">CONTACTANOS <span class="bi bi-briefcase"></span></div>
+                            <div class="ContacSocial card-body">
+                              <a class="card-title" href="#"><span class="bi bi-envelope-at"></span> Nuestro Email: OwlsCrawl@XXXX.com</a>
+                              <hr>
+                              <a class="card-title" href="#"><span class="bi bi-telephone"></span> Telefono: +XX 3XX258XX97</a>
                             </div>
                           </div>
                     </div>
@@ -102,17 +235,11 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="d-block">
                         <div class="card card2 text-white bg-dark border-secondary">
-                            <div class="card-header border-secondary">SOCIAL</div>
-                            <div class="card-body">
-                              <h5 class="card-title">Dark card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                              <h5 class="card-title">Dark card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                              <h5 class="card-title">Dark card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
+                            <div class="card-header border-secondary">SOCIAL <span class="bi bi-bell"></span></div>
+                            <div class="ContacSocial card-body">
+                              <a class="card-title" href="#"><span class="bi bi-facebook"></span> Facebook</a>
+                              <hr>
+                              <a class="card-title" href="#"><span class="bi bi-instagram"></span> Instragram</a>
                             </div>
                           </div>
                     </div>
