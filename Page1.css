@@ -10,6 +10,14 @@ body{
     font-size:larger;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.modal-header {
+    background-color: rgb(139, 19, 65);
+    color: rgb(255, 255, 255);
+}
+.modal-body{
+    background-color: rgb(32, 31, 32);
+    color: rgb(255, 255, 255);
+}
 
 .col-md-10{
     margin: auto;
@@ -21,17 +29,10 @@ body{
     margin-bottom: 50px;
 }
 
+
 #Historia1{
-    border: solid black 2px;
     margin:3%;
-    margin-top: 130px;
-}
-
-@media screen and (max-width:768px){
-
-    #Historia1{
-        margin-top: 100px;
-    }
+    margin-top: 150px;
 }
 
 #Historia2{
@@ -39,6 +40,35 @@ body{
     margin: 3%;
 }
 
+
+.Titulo{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.Titulo h1{
+    font-size: 2rem;
+}
+#Titulo{
+    border: solid rgb(255, 255, 255) 2px;
+    margin: auto;
+    padding: 1.5%;
+}
+#Princip{
+    width: 70%;
+    margin-top: 3%;
+}
+
+.card-header{
+    text-align: center;
+    font-size: larger;
+}
+.ContacSocial{
+    text-align: center;
+}
+.card-title{
+    text-decoration: none;
+}
 .card-text{
     text-align: center;    
 }
@@ -48,6 +78,8 @@ body{
 .card:hover {
     transform: scale(1.02);
 }
+
+
 footer{
     margin:3%;
 }
@@ -56,20 +88,14 @@ div[class^="d-block"]{
     margin-top: 3%;
 }
 
+
 .card2{
     width: auto;
 }
 .card2:hover{
     transform: scale(1.02);
 }
-.Social{
-    border: 1px solid black;
-    margin:3%;
-}
-.Contacinfo{
-    border: 1px solid black;
-    margin:3%;
-}
+
 
 #logo{
     height: 3em;
@@ -77,3 +103,66 @@ div[class^="d-block"]{
 #logoMb{
     height: 4em;
 }
+
+
+.cardHistory{
+    margin: 3%;
+}
+.cardHistory:hover{
+    transform: scale(1.01);
+}
+
+
+.ContHisto1{
+    border-radius: 2%;
+    background-color: rgb(79, 8, 8);
+    padding-left: 4.2%;
+    padding-top: 4.2%;
+    padding-bottom: 4.2%;
+}
+
+#lastcard{
+    margin: auto;
+    margin-right: 32%;
+}
+
+.Salvaje{
+    margin: auto;
+    margin-top: 3%;
+}
+
+@media screen and (max-width:768px){
+
+    #Historia1{
+        margin-top: 110px;
+    }
+
+    .ContHisto1{
+        border-radius: 0%;
+        padding-top: 8%;
+        padding-bottom: 7%;
+        padding-right: 1%;
+    }
+
+    .Titulo{
+        margin-bottom: 5%;
+    }
+
+    .Titulo h1{
+        font-size: 1.5em;
+    }
+
+    #Princip{
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    #lastcard{
+        margin-right: 5%;
+    }
+    .Salvaje{
+        margin-top: 10%;
+    }
+    
+}
+
